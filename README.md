@@ -10,8 +10,9 @@ Python Bikeshare Script
 Project is a script for a bikeshare database that pulls data from the database
 
 ### Files used
-Include the files used
+Files used include:
+- CSV files from cities
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
 
