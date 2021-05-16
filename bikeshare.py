@@ -14,8 +14,6 @@ weekdays = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday',
             'saturday')
 
 def choice(prompt, choices=('y', 'n')):
-    """Return a valid input from the user given an array of possible answers.
-    """
 
     while True:
         choice = input(prompt).lower().strip()
@@ -35,12 +33,6 @@ def choice(prompt, choices=('y', 'n')):
     return choice
 
 def get_filters():
-    """Ask user to specify city(ies) and filters, month(s) and weekday(s).
-    Returns:
-        (str) city -name of the city(ies) to analyze
-        (str) month -name of the month(s) to filter
-        (str) day -name of the day(s) of week to filter
-    """
 
     print("\n\nLet's explore some US bikeshare data!\n")
 
@@ -70,15 +62,6 @@ def get_filters():
     return city, month, day
 
 def load_data(city, month, day):
-    """Load data for the specified filters of city(ies), month(s) and
-       day(s) whenever applicable.
-    Args:
-        (str) city - name of the city(ies) to analyze
-        (str) month - name of the month(s) to filter
-        (str) day - name of the day(s) of week to filter
-    Returns:
-        df - Pandas DataFrame containing filtered data
-    """
 
     print("\nThe program is loading the data for the filters of your choice.")
     start_time = time.time()
@@ -119,7 +102,6 @@ def load_data(city, month, day):
     return df
 
 def time_stats(df):
-    """Display statistics on the most frequent times of travel."""
 
     print('\nDisplaying the statistics on the most frequent times of '
           'travel...\n')
@@ -141,7 +123,6 @@ def time_stats(df):
     print('-'*40)
 
 def station_stats(df):
-    """Display statistics on the most popular stations and trip."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -165,7 +146,6 @@ def station_stats(df):
     print('-'*40)
 
 def trip_duration_stats(df):
-    """Display statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -192,7 +172,6 @@ def trip_duration_stats(df):
     print('-'*40)
 
 def user_stats(df, city):
-    """Display statistics on bikeshare users."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -227,7 +206,6 @@ def user_stats(df, city):
     print('-'*40)
 
 def raw_data(df, mark_place):
-    """Display 5 line of sorted raw data each time."""
 
     print("\nYou opted to view raw data.")
 
@@ -315,7 +293,6 @@ def main():
         restart = choice("\nWould you like to restart?\n\n[y]Yes\n[n]No\n\n>")
         if restart.lower() != 'y':
             break
-
 
 if __name__ == "__main__":
     main()
