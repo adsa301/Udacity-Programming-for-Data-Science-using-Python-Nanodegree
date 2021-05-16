@@ -8,7 +8,7 @@ Date Created 17/05/2021
 Python Bikeshare Script
 
 ### Description
-Project is a script for a bikeshare database that pulls data from the database
+Project uses a python script to explore data for Chicago, New York and Washington in the United States. The code imports data and and answers questions according to what the user wants. It does this by using Python 3, NumPy and Pandas libraries.
 
 ### Files used
 Files used include:
