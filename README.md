@@ -7,7 +7,7 @@ Date Created 17/05/2021
 Python Bikeshare Script
 
 ### Description
-Describe what your project is about and what it does
+Project is a script for a bikeshare database that pulls data from the database
 
 ### Files used
 Include the files used
