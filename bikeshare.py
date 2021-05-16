@@ -32,6 +32,7 @@ def choice(prompt, choices=('y', 'n')):
 
     return choice
 
+
 def get_filters():
 
     print("\n\nLet's explore some US bikeshare data!\n")
@@ -60,6 +61,7 @@ def get_filters():
 
     print('-'*40)
     return city, month, day
+
 
 def load_data(city, month, day):
 
@@ -101,6 +103,7 @@ def load_data(city, month, day):
 
     return df
 
+
 def time_stats(df):
 
     print('\nDisplaying the statistics on the most frequent times of '
@@ -121,6 +124,7 @@ def time_stats(df):
 
     print("\nThis took {} seconds.".format((time.time() - start_time)))
     print('-'*40)
+
 
 def station_stats(df):
 
@@ -144,6 +148,7 @@ def station_stats(df):
 
     print("\nThis took {} seconds.".format((time.time() - start_time)))
     print('-'*40)
+
 
 def trip_duration_stats(df):
 
@@ -170,6 +175,7 @@ def trip_duration_stats(df):
 
     print("\nThis took {} seconds.".format((time.time() - start_time)))
     print('-'*40)
+
 
 def user_stats(df, city):
 
@@ -204,6 +210,7 @@ def user_stats(df, city):
 
     print("\nThis took {} seconds.".format((time.time() - start_time)))
     print('-'*40)
+
 
 def raw_data(df, mark_place):
 
@@ -261,6 +268,7 @@ def raw_data(df, mark_place):
         break
 
     return mark_place
+
 
 def main():
     while True:
